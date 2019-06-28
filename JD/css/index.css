@@ -1,0 +1,292 @@
+/*
+* @Author: andy
+* @Date:   2017-12-13 11:22:37
+* @Last Modified by:   andy
+* @Last Modified time: 2017-12-13 11:22:37
+*/
+/* 京东首页的css */
+body {
+	background-color: #f0f3ef;
+}
+.jd {
+	height: 480px;
+	position: relative;
+}
+.ad {
+	width: 100%;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.ad a {
+	width: 250px;
+	height: 480px;
+	position: absolute;
+	background: url(../images/ad-l.png) no-repeat top center;
+	left: -250px;
+	top: 0;
+}
+.ad .ad-r-a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 480px;
+	background: url(../images/ad-r.jpg);
+	transition: all 0.8s;
+	z-index: 99;
+}
+.ad:hover .ad-r-a{  
+	width: 990px;
+}
+.jd-inner {
+	height: 480px;
+	position: relative;
+	z-index: 9;
+}
+.jd-col1 {
+	width: 190px;
+	height: 480px;
+	float: left;
+	background-color: #fff;
+	border-top: #f0f3ef solid 1px;
+}
+.jd-col2 {
+	width: 790px;
+	height: 480px;
+	float: left;
+	margin: 0 10px;
+}
+.jd-col3 {
+	width: 190px;
+	height: 480px;
+	background-color: #fff;
+	float: right;
+}
+.jd-col1 ul {
+	padding: 6px 0;
+}
+.jd-col1 li {
+	height: 26px;
+	line-height: 26px;
+	font-size: 14px;
+	padding-left: 16px;
+}
+.jd-col1 li:hover {
+	background-color: rgba(0,0,0,.1);
+}
+.jd-col1 span {
+	margin: 0 2px;
+	font-size: 12px;
+}
+.jd-bn {
+	width: 790px;
+	height: 340px;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.jd-bd-l,.jd-bd-r {
+	width: 390px;
+	height: 130px;
+	float: left;
+}
+.jd-bn a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.jd-bd-l {
+	margin-right: 10px;
+}
+/* .jd-bd-r {
+	background: url(../images/r.jpg);
+} */
+.jd-bn-l,.jd-bn-r {
+	width: 24px;
+	height: 55px;
+	position: absolute;
+	top: 50%;
+	background-color: rgba(0,0,0,0.2);
+	font-size: 25px;
+	font-family: "icomoon";
+	line-height: 55px;
+	color: hsla(0,0%,100%,.4);
+	cursor: pointer;
+}
+.jd-bn-l {
+	left: 0;
+	padding-left: 7px;
+}
+.jd-bn-r {
+	right: 0;
+	padding-right: 7px;
+}
+.jd-bn-l:hover,.jd-bn-r:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+.circle {
+	width: 156px;
+	height: 20px;
+	background-color: rgba(0,0,0,0.2);
+	position: absolute;
+	bottom: 15px;
+	left: 317px;
+	border-radius: 10px;
+	
+}
+
+.circle ol li {
+	width: 14px;
+	height: 14px;
+	background-color: #FFFFFF;
+	border-radius: 7px;
+	float: left;
+	margin: 3px 6px 0;
+	cursor: pointer;
+}
+
+.circle ol li:hover {
+	background-color: #C81623;
+}
+.user {
+	height: 115px;
+	
+	
+}
+.new {
+	height: 154px;
+	
+	border-top: #ccc solid 1px;
+}
+.jd-service {
+	height: 209px;
+	overflow: hidden;
+}
+.user-login {
+	padding: 15px 15px;
+	position: relative;
+}
+.login-img {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
+.login-img img {
+	width: 40px;
+	height: auto;
+}
+.login-img a {
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.login-b {
+	padding-left: 50px;
+}
+.login-c a {
+	width: 70px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	display: inline-block;
+	border: #f10215 solid 2px;
+	color: #f10215;
+	margin: 20px 4px 0 0;
+}
+.login-c a:hover {
+	color: #fff;
+	background-color: #F10215;
+}
+.new-tit {
+	padding: 5px 15px;
+}
+.new-hd {
+	height: 22px;
+	margin-top: 3px;
+	border-bottom: #ccc solid 1px;
+	position: relative;
+}
+.new-cx {
+	padding-right: 13px;
+	border-right: #ccc solid 1px;
+}
+.new-gg {
+	padding-left: 10px;
+}
+.new-more {
+	float: right;
+}
+.line {
+	width: 28px;
+	height: 2px;
+	background-color: #F10215;
+	position: absolute;
+	top: 21px;
+	left: 0;
+}
+.new-bd {
+	margin-top: 20px;
+}
+.new-bd li {
+	width: 164px;
+	height: 23px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.jd-service-li {
+	width: 200px;
+}
+.jd-service-li li {
+	width: 47px;
+	height: 69px;
+	float: left;
+	border-top: #CCCCCC solid 1px;
+	border-right: #CCCCCC solid 1px;
+}
+.jd-service-li i {
+	width: 25px;
+	height: 25px;
+	display: block;
+	background: url(../images/sprite_fs@1x.png);
+	background-position: -0px -88px;
+	margin: 12px auto 7px;
+}
+.jd-service-li p {
+	text-align: center;
+}
+.jd-service-li  li:nth-child(2) i {
+	background-position: -0px -43px;
+}
+.jd-service-li  li:nth-child(3) i {
+	background-position: -43px -88px;
+}
+.jd-service-li  li:nth-child(4) i {
+	background-position: -88px -0px;
+}
+.jd-service-li  li:nth-child(5) i {
+	background-position: -88px -44px;
+}
+.jd-service-li  li:nth-child(6) i {
+	background-position: 1px 0px;
+}
+.jd-service-li  li:nth-child(7) i {
+	background-position: -44px -44px;
+}
+.jd-service-li  li:nth-child(8) i {
+	background-position: -87px -87px;
+}
+.jd-service-li  li:nth-child(9) i {
+	background-position: -131px 0;
+}
+.jd-service-li  li:nth-child(10) i {
+	background-position: -131px -44px;
+}
+.jd-service-li  li:nth-child(11) i {
+	background-position: -131px -88px;
+}
+.jd-service-li  li:nth-child(12) i {
+	background-position: -44px 0;
+}
+

@@ -1,0 +1,383 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* background-color: rgba(0,0,0,.02); */
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+a:hover {
+	color: brown;
+}
+
+li {
+	list-style: none;
+}
+
+.top-s {
+	width: 100%;
+	height: 70px;
+	/* margin: 0 auto; */
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	margin-left: -50%;
+	background-color: #FFFFFF;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, .2);
+	/* border-bottom: #00A4FF solid 2px; */
+	z-index: 9;
+}
+
+.top {
+	width: 1200px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+.top .logo {
+	width: 195px;
+	height: 42px;
+	background: url(../img/LOGO2.png) no-repeat;
+	float: left;
+	margin-top: 15px;
+}
+
+.top ul {
+	float: left;
+	line-height: 42px;
+}
+
+.top li {
+	float: left;
+	margin-left: 20px;
+}
+
+.top a {
+	font-family: "microsoft yahei", serif;
+	float: left;
+	margin: 10px 5px;
+}
+
+.top-nav a:hover {
+	border-bottom: #00a4ff solid 3px;
+}
+
+.top .me a {
+	float: right;
+	height: 50px;
+	margin-top: 1px;
+}
+
+.top .me img {
+	border: #22B0FF solid 2px;
+	border-radius: 50%;
+	position: relative;
+	top: 13px;
+	right: 15px;
+}
+/* 顶部公共样式 */
+.banner {
+	width: 1200px;
+	height: 420px;
+	overflow: hidden;
+	margin: 70px auto 0;
+	position: relative;
+	opacity: 0.9;
+}
+.banner .bannerR,
+.banner .bannerL{
+	width: 40px;
+	height: 70px;
+	position: absolute;
+	color: white;
+	opacity: 0.1;
+	background: black;
+	top: 50%;
+	margin-top: -45px;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+	cursor: pointer;
+	display: block;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.banner .bannerL{
+	left: 0;
+	border-radius: 0 4px 4px 0;
+}
+.banner .bannerR{
+	right: 0;
+	border-radius: 4px 0 0 4px;
+}
+
+
+.banner .banner-nav li {
+	position: absolute;
+	display: none;
+}
+.banner ul li:nth-child(1) {
+	display: block;
+}
+/* .subnav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 190px;
+	background: rgba(0, 0, 0, .4);
+}
+
+.subnav li {
+	padding-left: 20px;
+	height: 60px;
+	line-height: 40px;
+} 
+
+.banner .subnav .subnav-a {
+	color: #fff;
+	font: 14px "microsoft yahei", serif;
+	display: block;
+	padding-top: 50px;
+}
+
+.subnav .subnav-a:hover {
+	color: #00b4ff;
+}
+
+.subnav span {
+	float: right;
+	margin-right: 20px;
+ } 
+ */
+
+.banner .circle ul {
+	height: 20px;
+	position: absolute;
+	right: 20px;
+	bottom: 30px;
+	margin-left: -28px;
+}
+
+.banner .circle li {
+	width: 10px;
+	height: 10px;
+	float: left;
+	left: 50%;
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 50%;
+	margin: 5px 7px;
+	cursor: pointer;
+	border: 2px rgba(0, 0, 0, .7) solid;
+}
+.banner .circle .liClick{
+	background-color: #F6F6F6;
+}
+
+.game {
+	width: 228px;
+	height: 300px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -160px;
+	background-color: rgba(255, 255, 255, 0.88);
+}
+
+.game dt {
+	height: 50px;
+	font: 700 18px "黑体", serif;
+	background-color: rgba(110, 159, 204, 0.66);
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+}
+
+.game dd {
+	padding: 15px 20px 0;
+}
+
+.banner .game li {
+	border-bottom: #ccc solid 1px;
+}
+
+.banner .game .game-p {
+	padding-bottom: 20px;
+	font: 12px "黑体", serif;
+}
+
+.banner.game dd li {
+	height: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.game dd li:last-child {
+	border: 0;
+}
+
+.game h5 {
+	font: 16px "黑体", serif;
+}
+
+.game .play {
+	height: 40px;
+	border: 1px solid #22b0ff;
+	color: #22b0ff;
+	display: block;
+	text-align: center;
+	font: 18px "黑体", serif;
+	line-height: 40px;
+}
+
+.game .play:hover {
+	background-color: #22b0ff;
+	color: #fff;
+}
+
+.skillbox {
+	width: 1200px;
+	height: 70px;
+	margin: 30px auto;
+	background-color: #FFFFFF;
+	line-height: 70px;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, .3);
+}
+
+.skill {
+	padding-left: 30px;
+}
+
+.skill strong {
+	color: #22b0ff;
+	font-size: 14px;
+	margin-right: 15px;
+}
+
+.skillbox .skills {
+	margin: 0 20px;
+	font: 14px "黑体", serif;
+}
+.pro {
+	width: 1200px;
+	height: 300px;
+	margin: 0 auto 20px;
+	
+}
+.pro h4 {
+	margin-top: 30px;
+	font: 18px "黑体", serif;
+}
+
+.pro-hd {
+	height: 40px;
+	position: relative;
+}
+
+.pro-hd .pro-a {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	font: 12px "黑体", serif;
+}
+
+
+.pro-bd .pro-il {
+	width: 251px;
+	height: 270px;
+	background-color: #f3fff3;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	margin-right: 65px;
+	margin-bottom: 15px;
+	font-family: "黑体", serif;
+}
+.pro-bd .pro-il img{
+	text-align: center;
+}
+
+.pro-bd .pro-il:hover {
+	box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, .3);
+	transform: translateY(-10px);
+}
+.pro-il:hover .pic {
+	margin-left: -4px;
+}
+
+.pro-bd .pro-il:nth-child(4) {
+	margin-right: 0;
+}
+
+.pro-tit {
+	width: 185px;
+	margin: 13px auto;
+	font-size: 14px;
+	color: #050505;
+}
+
+.pro-bd p {
+	width: 185px;
+	margin: 20px auto;
+	color: #999;
+}
+
+.pro-bd p span {
+	color: #ff7c2d;
+}
+.pro-il .JD {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 251px;
+	height: 270px;
+}
+.pic {
+	transition: all 0.4s;
+}
+
+.bigfooter {
+	width: 100%;
+	height: 100%;
+	background-color:rgba(25,113,196,0.2) ;
+}
+.footer {
+	width: 1200px;
+	height: 100px;
+	margin: 60px auto ;
+	padding-top: 40px;
+}
+.footer-1 {
+	float: left;
+}
+.footer-1 p{
+	margin-top: 35px;
+	line-height: 24px;
+	color:#727272;
+	font-family: "microsoft yahei",serif;
+}
+.footer-2{
+	padding-top:50px ;
+	padding-right: 20px
+}
+.footer-2 .pick{
+	width: 120px;
+	height: 35px;
+	border: 1px solid #22b0ff;
+	text-align: center;
+	color: #22b0ff;
+	float: right;
+	font: 14px "黑体",serif;
+	line-height: 35px;
+}
+.footer-2 .pick:hover{
+	background-color: #22b0ff;
+	color:#fff;
+}

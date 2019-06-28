@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MobyDick</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/study.css">
+	</head>
+	<body>
+		<!-- 顶部导航 -->
+		<div class="top-s">
+		</div>
+		<!-- 页面主内容 -->
+		<div class="study">
+			<div class="study_main" >
+				<div>该模块正在组建。。。</div>
+			</div>
+			<div class="study_nav">
+
+				<ul class="study_nav_ul">
+					<li class="head"><h3>学习笔记</h3></li>
+					<li><a href="javascript:;"> HTML、CSS3笔记 </a></li>
+					<li><a href="javascript:;"> JavaScript笔记 </a></li>
+					<li><a href="javascript:;"> JQuery笔记 </a></li>
+					<li><a href="javascript:;"> Ajax笔记 </a></li>
+					<li><a href="javascript:;"> Node.js笔记 </a></li>
+					<li><a href="javascript:;"> Vue笔记 </a></li>
+					<li></li>
+				</ul>
+		</div>
+		<script src="js/jquery-1.12.4.js"></script>
+		<script>
+			$(".top-s").load("common.php");
+			$(".study_nav_ul").children().click(function(){
+				$(".study_main").load("note/vue.php");
+			})
+			
+		</script>
+	</body>
+</html>
